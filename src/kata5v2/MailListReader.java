@@ -40,6 +40,9 @@ public class MailListReader {
             if(!mail.contains("@")) continue;
             mailList.add(mail);
         }
+        rs.close();
+        state.close();
+        conect.close();
         return mailList;
         
     }
